@@ -1,0 +1,26 @@
+#!/bin/bash
+###################################################################################
+# HELP                                                                            #
+###################################################################################
+help ()
+{
+echo "this scirpt is about a song -never gonna give you up,only work on linux"
+echo "h  print this help."
+}
+####################################################################################
+####################################################################################
+#Main program                                                                      #
+####################################################################################
+#Get the option
+while getopts ":h" option; do 
+ case $option in
+  h)
+   help
+   exit;;
+  \?)
+    echo "nice try diddy"
+    exit;;
+ esac
+done
+xdg-open "https://youtu.be/hPr-Yc92qaY?si=pSPTByY7ArKRIs-x"
+
